@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from './Pokemon.module.css'; // Импортируем стили
+import styles from './Pokemon.module.css';
 
 const PokemonCard = ({ pokemon }) => {
     const [pokemonData, setPokemonData] = useState(null);
@@ -19,7 +19,7 @@ const PokemonCard = ({ pokemon }) => {
     }, [pokemon.url]);
 
     return (
-        <div className={styles['pokemon-card']}> {/* Используем класс из стилей */}
+        <div className={styles['pokemon-card']}>
             {pokemonData && (
                 <div>
                     {pokemonData.sprites && (
